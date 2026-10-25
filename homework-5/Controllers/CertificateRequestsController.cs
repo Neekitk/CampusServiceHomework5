@@ -9,8 +9,7 @@ namespace CampusServiceHomework5.Controllers;
 public class CertificateRequestsController : ControllerBase
 {
     [HttpPost]
-    public IActionResult CreateRequest(
-        [FromBody] CertificateRequest request)
+    public IActionResult CreateRequest([FromBody] CertificateRequest request)
     {
         Activity.Current?.SetTag(
             "jira.issue",
